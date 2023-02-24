@@ -1,4 +1,4 @@
-# slth-eps
+# Strong Lottery Ticket Hypothesis with $\varepsilon$--perturbation
 
 Code for "Strong Lottery Ticket Hypothesis with $\varepsilon$--perturbation". The code is adapted from https://github.com/acnagle/optimal-lottery-tickets.
 
