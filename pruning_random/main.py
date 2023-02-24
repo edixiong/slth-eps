@@ -50,7 +50,6 @@ def main():
     print("Printing full model...")
     print_model(model) ##
 
-    # Second time training
     # Only pass the parameters where p.requires_grad == True to the optimizer
     optimizer = optim.SGD(
         [p for p in model.parameters() if p.requires_grad],
