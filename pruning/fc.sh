@@ -6,7 +6,7 @@ lr1=0.03
 lr2=0.1
 hidden_size=500
 
-for epochs in 50 100; do
+for epochs in 50; do
     for arch in RedFourLayerFC; do
         mkdir -p "./results/${arch}"
         for sparsity in 0.3; do

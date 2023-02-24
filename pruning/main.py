@@ -101,7 +101,7 @@ def main():
     end = time.time()
     total_time = (end - start) / 60
 
-    num_weights = sum(x.numel() for x in model.parameters() if x.requires_grad)     # This calcuation does not include the number of weights in convolutional layers, including baseline models, since we are interested in observing the number of parameters in fully connected layers only. Convolutional layers are randomly initialized and never trained/pruned in any of the models. Note that num_weights is equal to the number of parameters that are being updated in the network
+    num_weights = sum(x.numel() for x in model.parameters() if x.requires_grad) 
 
     print('\nTotal time spent pruning/training: {:.2f} minutes'.format(total_time))
     print('Total number of parameters in model:', num_weights)

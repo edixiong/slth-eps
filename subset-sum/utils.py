@@ -7,7 +7,6 @@ import gurobipy as gp
 from gurobipy import GRB
 
 def FindSubset(w, a, eps, n, p, output_flag=False, check_w_lt_eps=False):
-    # p = 0.005
     subset_sum = None
     num_used = 0    # number of a_i terms used in the subset sum
     
